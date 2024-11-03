@@ -1,0 +1,53 @@
+@use '@angular/material' as mat;
+
+// Incluye los estilos comunes de Angular Material.
+@include mat.core();
+
+// Define la paleta de colores personalizada con el prefijo `m2-`
+$eppeye-primary: mat.m2-define-palette((
+  50: #FFE5DB,
+  100: #FFE5DB,
+  200: #FFD4C5,
+  300: #FFB899,
+  400: #FD9D74,
+  500: #FD8356,
+  600: #F8713E,
+  700: #F46229,
+  800: #E95512,
+  900: #D74B0C,
+  A100: #FFE5DB,
+  A200: #FFD4C5,
+  A400: #FD9D74,
+  A700: #D74B0C,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: black,
+    400: black,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: black,
+    A200: black,
+    A400: black,
+    A700: white,
+  )
+));
+
+$eppeye-accent: mat.m2-define-palette(mat.$m2-pink-palette, A200);
+$eppeye-warn: mat.m2-define-palette(mat.$m2-red-palette);
+
+// Define el tema usando `m2-define-light-theme`
+$eppeye-theme: mat.m2-define-light-theme((
+  color: (
+    primary: $eppeye-primary,
+    accent: $eppeye-accent,
+    warn: $eppeye-warn,
+  ),
+));
+
+// Aplica el tema personalizado a todos los componentes de Angular Material
+@include mat.all-component-themes($eppeye-theme);

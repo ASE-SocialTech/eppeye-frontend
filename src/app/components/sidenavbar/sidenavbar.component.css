@@ -1,0 +1,54 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .example-events {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #555;
+  }
+
+
+.sidenav-container {
+    height: 100vh;
+    background-color: #D8572A; /* Color de fondo similar al mockup */
+  }
+  
+  mat-sidenav {
+    width: 200px;
+    background-color: #D8572A;
+    color: #ffffff;
+  }
+  
+  .logo {
+    text-align: center;
+    padding: 16px 0;
+  }
+  
+  mat-nav-list {
+    margin-top: 20px;
+  }
+  
+  button[mat-button] {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding: 12px;
+    text-transform: capitalize;
+  }
+  
+  button[mat-button] mat-icon {
+    margin-right: 8px;
+    color: #ffffff;
+  }
+  
+  .main-content {
+    padding: 20px;
+    background-color: #FFFFFF;
+  }
+  

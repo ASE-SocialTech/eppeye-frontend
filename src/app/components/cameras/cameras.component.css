@@ -1,0 +1,12 @@
+/* Styles for webcam display and button */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
