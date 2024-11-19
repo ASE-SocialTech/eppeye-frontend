@@ -1,12 +1,127 @@
-/* Styles for webcam display and button */
-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-  }
-  
-  button {
-    margin-top: 10px;
-    padding: 10px;
-  }
-  
+.cameras-container {
+  margin: 20px;
+}
+
+h2.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.camera-select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.camera-content {
+  display: flex;
+  gap: 20px;
+}
+
+.camera-left {
+  flex: 2;
+}
+
+.camera-simulation {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.camera-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.webcam {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.alerts-title {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.alerts-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.alerts-list li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.alert-time {
+  font-weight: bold;
+}
+
+.alert-description {
+  font-size: 14px;
+}
+
+.camera-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.safety-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.safety-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.safety-form label {
+  font-size: 14px;
+}
+
+.save-button {
+  padding: 10px;
+  background-color: #4f4f4f;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.alerts-list {
+  margin-top: 20px;
+}
+
+.alert-item {
+  background-color: #FFE5DB; /* Fondo anaranjado */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.alert-time {
+  font-weight: bold;
+  color: #B03D13;
+}
+
+.alert-description {
+  color: #B03D13;
+  font-size: 0.9em;
+}
