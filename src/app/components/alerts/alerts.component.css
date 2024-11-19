@@ -1,0 +1,117 @@
+* {
+    font-family: 'Inter', sans-serif;
+    color: #4F4F4F;
+  }
+  
+  .alerts-main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .alert-group {
+    margin-bottom: 30px;
+  }
+  
+  
+  .alert-group-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+ 
+  .no-alerts-message {
+    font-size: 14px;
+    color: #959595; 
+    margin: 10px 0;
+  }
+  
+  
+  .alert-camera-group {
+    margin-bottom: 20px;
+  }
+  
+  .alert-camera {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .alert-camera::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #B03D13;
+    margin-right: 10px;
+  }
+  
+  .alert-item {
+    margin-bottom: 10px;
+  }
+  
+  .alert-time {
+    font-size: 14px;
+    color: #B03D13; 
+    background-color: #FFE5DB; 
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 300px;
+    box-sizing: border-box;
+  }
+  
+  .alerts-list {
+    padding: 20px;
+  }
+  
+  /* Contenedor para los botones */
+.buttons-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    width: 20%;
+  }
+  
+  /* Estilo para el botón "Load more" */
+  .load-more-btn {
+    background-color: white;
+    color: #4F4F4F; /* Color de texto */
+    border: 2px solid #4F4F4F; /* Borde del botón */
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .load-more-btn:hover {
+    background-color: #F2F7FC; /* Fondo suave al pasar el mouse */
+  }
+  
+  /* Estilo para el botón "DOWNLOAD REPORT" */
+  .download-report-btn {
+    background-color: #B03D13;
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-report-btn:hover {
+    background-color: #9C3510; /* Cambio de color al pasar el mouse */
+  }
