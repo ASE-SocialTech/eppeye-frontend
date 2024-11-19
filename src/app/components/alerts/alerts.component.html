@@ -1,1 +1,34 @@
-<p>alerts works!</p>
+<div class="alerts">
+    <div class="alerts-main-container">
+      <div class="header">
+        <h2>Alerts</h2>
+      </div>
+      <div class="alerts-list">
+        <div *ngFor="let alertGroup of alertsGrouped" class="alert-group">
+          <div class="alert-group-header">
+            <h3>{{ alertGroup.date }}</h3>
+          </div>
+  
+          <div *ngIf="alertGroup.alertsGroupedByCamera.length === 0" class="no-alerts-message">
+            No alerts to show
+          </div>
+  
+          <div *ngFor="let alertCamera of alertGroup.alertsGroupedByCamera" class="alert-camera-group">
+            <div class="alert-camera">
+              <strong>{{ alertCamera.camera }}</strong>
+            </div>
+  
+            <div *ngFor="let alert of alertCamera.alerts" class="alert-item">
+              <div class="alert-time">{{ alert.time }} - {{ alert.incidentType }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons-container">
+            <button class="load-more-btn">Load more</button>
+            <button class="download-report-btn">DOWNLOAD REPORT</button>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+  
