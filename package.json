@@ -22,6 +22,7 @@
     "@angular/router": "^18.2.0",
     "@tensorflow/tfjs": "^4.22.0",
     "@types/moment": "^2.13.0",
+    "chart.js": "^4.4.6",
     "moment": "^2.30.1",
     "ngx-webcam": "^0.4.1",
     "rxjs": "~7.8.0",
